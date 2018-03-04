@@ -1,29 +1,12 @@
 <template>
-    <div>
-        {{ val }}
-        <!-- 根组件路由占位, 将来通过url来控制页面的展示 -->
-        <router-view></router-view>
-
-        <el-switch
-            v-model="nian"
-            active-text="去年"
-            inactive-text="今年">
-        </el-switch>
-    </div>
+<!-- 登录与后台管理页面互相切换 -->
+    <router-view></router-view>
 </template>
 
 <script>
     export default {
-        // 这是es6中对象定义方法的语法
-        data() {
-            return {
-                val: 'vue脚手架测试',
-                nian: true
-            }
-        },
+       
 
-        //生命周期函数,vue会自动调用
-        //组件/路由 axios.get("域名").then("相当于请求成功的回调函数")??请求
     }
 </script>
 
