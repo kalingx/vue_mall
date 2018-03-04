@@ -21,7 +21,7 @@ axios.defaults.baseURL = domain;
 axios.defaults.withCredentials = true;
 
 //如果想所有模块都可以用,可以在vue的原型上添加,将来vue组件可以直接使用,原型的方法...通常命名为$..
-Vue.peototype.$http = axios;
+Vue.prototype.$http = axios;
 Vue.prototype.$api = api;
 
 
