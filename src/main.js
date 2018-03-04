@@ -14,6 +14,8 @@ import 'normalize.css'
 import axios from 'axios'
 import api, { domain } from './js/api.js'
 
+import './less/index.less'
+
 //配置默认域名,这样请求就不用在url里加域名了
 axios.defaults.baseURL = domain;
 

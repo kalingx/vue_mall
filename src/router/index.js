@@ -21,6 +21,6 @@ export default new VueRouter({
         //登录
         { name: 'login',path:'/login',component:Login},
         //后台管理
-        { name: 'amdin',path:'/admin',component: Admin,children: [...shopcart]}
+        { name: 'admin',path:'/admin',component: Admin,children: [...shopcart]}
     ]
 })
